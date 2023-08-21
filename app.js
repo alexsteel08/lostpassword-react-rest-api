@@ -37,7 +37,7 @@ const PasswordResetForm = () => {
       }
     } catch (error) {
       setMessage('');
-      setError('Помилка підключення. Будь ласка, спробуйте пізніше.');
+      setError('Error');
     }
   };
 
@@ -54,7 +54,7 @@ const PasswordResetForm = () => {
       </div>
       {message && <div className="success">{message}</div>}
       {error && <div className="error">{error}</div>}
-      <button type="submit">Відновити пароль</button>
+      <button type="submit">Reset password</button>
     </form>
   );
 };
